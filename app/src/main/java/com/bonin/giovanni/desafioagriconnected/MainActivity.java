@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                             //txtLocation.setText(String.format(Locale.US, "Lat: %s - Long: %s", wayLatitude, wayLongitude));
                             //txtSpeed.setText(String.format(Locale.US, "Speed: %s km/h", Speed*3.6));
                             //txtTime.setText(String.format(Locale.US, "Time: %s ", time));
-                            circularImageBar(circIV, (int) Speed);
+                            circularImageBar(circIV, (int) (Speed*3.6));
                         }
                         if (!isContinue && mFusedLocationClient != null) {
                             mFusedLocationClient.removeLocationUpdates(locationCallback);
